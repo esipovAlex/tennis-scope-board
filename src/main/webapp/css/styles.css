@@ -1,0 +1,316 @@
+.page-center-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.page-center {
+    margin: 0 auto;
+}
+
+.page-header {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    padding-bottom: 25px;
+}
+
+.main-block {
+    display: flex;
+    min-width: 300px;
+    max-width: 550px;
+    min-height: 200px;
+    background: rgb(254, 254, 254);
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    padding: 20px 10px 10px 10px;
+    flex-direction: column;
+    justify-content: center;
+    outline: 5px solid #fbfbfb;
+}
+
+a {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+}
+
+.error {
+    min-width: 300px;
+    max-width: 550px;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.link-button {
+    background: rgba(88, 188, 174, 0.68);
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0 10px 10px;
+}
+
+.link-button:hover {
+    background: rgba(108, 218, 202, 0.7);
+}
+
+.form-element-wrapper {
+    margin: 0 20px 0;
+    padding: 10px 0 10px;
+}
+
+.form-element-wrapper label {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(79, 79, 79);
+    padding-bottom: 10px;
+}
+
+.form-element-wrapper input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(79, 79, 79);
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+.form-element-wrapper input::placeholder {
+    color: #CCC;
+}
+
+.start-button {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    background: rgba(88, 188, 174, 0.68);
+    padding: 10px 0;
+    border-radius: 3px;
+    margin: 0 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.start-button:hover {
+    cursor: pointer;
+    background: rgba(108, 218, 202, 0.7);
+}
+
+.player-filter-form-wrapper {
+    padding-bottom: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.scores {
+    margin: 0 20px;
+}
+
+.scores-table {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(79, 79, 79);
+    margin: 10px 0;
+}
+
+.scores-table tr th {
+    padding: 5px 20px 10px 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.scores-table tr td {
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 5px;
+}
+
+.player-filter-form-element-wrapper {
+    flex: 1 1 0%;
+}
+
+.filter-form label {
+    flex: 1.1 1 0%;
+    padding: 10px 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(79, 79, 79);
+}
+
+.filter-form input {
+    flex: 1 1 0;
+    width: 20%;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(79, 79, 79);
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.search-button {
+    flex: 0.6 1 0;
+    width: 20%;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    background: rgba(88, 188, 174, 0.68);
+    padding: 10px 0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background: rgba(108, 218, 202, 0.7);
+}
+
+.filter-form input::placeholder {
+    color: #CCC;
+}
+
+.pagination {
+    border-top: 1px solid #EBEBEB;
+    padding: 15px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span, .pagination a {
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.pagination span {
+    color: #CCC;
+}
+
+.pagination a {
+    text-decoration: underline;
+}
+
+.go-home {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    margin: 40px 40px 0 0;
+}
+
+.go-home a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.go-home a:hover {
+    background: rgba(108, 218, 202, 0.2);
+}
+
+.go-home img {
+    width: 40px;
+    height: 40px;
+}
+
+.score {
+    margin: 0 20px;
+}
+
+.score-table {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(79, 79, 79);
+    margin: 10px 0;
+}
+
+.score-table tr th {
+    padding: 5px 20px 10px 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.score-table tr td {
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.matches-not-found-message {
+    padding: 20px 0;
+}
+
+.matches-not-found-message p {
+    text-align: center;
+}
+
+.match-commands {
+    border-top: 1px solid #EBEBEB;
+    padding: 15px 0px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.match-commands form {
+    flex: 1 1 0;
+}
+
+.match-commands button {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(79, 79, 79);
+    background: rgba(88, 188, 174, 0.68);
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0px 5px;
+}
+
+.match-commands button:hover {
+    cursor: pointer;
+    background: rgba(108, 218, 202, 0.7);
+}
+
+.winner-block {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.winner-score {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
