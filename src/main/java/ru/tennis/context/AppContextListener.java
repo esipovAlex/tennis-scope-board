@@ -29,7 +29,7 @@ public class AppContextListener implements ServletContextListener {
         CheckGameProcess checkGameProcess = new CheckGameProcess();
         RegularProcess regularProcess = new RegularProcess();
         GreatLessProcess greatLessProcess = new GreatLessProcess();
-        ScoreProcess scoreProcess = new ScoreProcess(tieBreakProcess,checkGameProcess, regularProcess, greatLessProcess);
+        ScoreProcess scoreProcess = new ScoreProcess(tieBreakProcess, checkGameProcess, regularProcess, greatLessProcess);
         ScoreService scoreService = new ScoreService(scoreProcess, matchService, mapper);
         ServletContext context = sce.getServletContext();
         context.setAttribute("playerService", playerService);

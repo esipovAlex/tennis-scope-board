@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.UUID;
 
+import static java.lang.System.out;
+
 @WebServlet("/match-score")
 public class MatchScoreServlet extends HttpServlet {
 
@@ -22,7 +24,7 @@ public class MatchScoreServlet extends HttpServlet {
     private MatchService matchService;
 
     @Override
-    public void init() throws ServletException{
+    public void init() throws ServletException {
         super.init();
         ServletContext context = getServletContext();
         this.scoreService = (ScoreService) context.getAttribute("scoreService");
@@ -35,7 +37,7 @@ public class MatchScoreServlet extends HttpServlet {
         MatchResponse match = scoreService.addPoint(uuid, 0, 0);
         request.setAttribute("uuid", uuid.toString());
         request.setAttribute("match", match);
-        System.out.println("match = " + match);
+        out.println("match = " + match);
         request.getRequestDispatcher("match-score.jsp").forward(request, response);
     }
 

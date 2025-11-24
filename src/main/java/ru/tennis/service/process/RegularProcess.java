@@ -15,7 +15,7 @@ public class RegularProcess {
             pointsFirstNew = getPoint(firstPlayerPoints);
             if ((pointsFirstNew - secondPlayerPoints) > 60) {
                 score.setFirstPlayerGames(score.getFirstPlayerGames() + 1);
-                score = fillField(score, true, 0,0, true);
+                score = fillField(score, true, 0, 0, true);
             } else {
                 score.setFirstPlayerPoints(pointsFirstNew);
             }
@@ -23,13 +23,13 @@ public class RegularProcess {
             pointsSecondNew = getPoint(secondPlayerPoints);
             if ((pointsSecondNew - firstPlayerPoints) > 60) {
                 score.setSecondPlayerGames(score.getSecondPlayerGames() + 1);
-                score = fillField(score, true, 0,0, true);
+                score = fillField(score, true, 0, 0, true);
             } else {
                 score.setSecondPlayerPoints(pointsSecondNew);
             }
         }
         if (score.getFirstPlayerPoints() == 40 && score.getSecondPlayerPoints() == 40) {
-            score = fillField(score, false, 0,0, false);
+            score = fillField(score, false, 0, 0, false);
             score.setDeuce(false); // переходим на больше-меньше
         }
         return score;
@@ -47,7 +47,7 @@ public class RegularProcess {
 
     private Score fillField(Score old, Boolean deuce, Integer firstPoint, Integer secondPoint, Boolean needGame) {
         Score score = new Score(old);
-        score.setDeuce(Objects.isNull(deuce) ? old.isDeuce(): deuce);
+        score.setDeuce(Objects.isNull(deuce) ? old.isDeuce() : deuce);
         score.setFirstPlayerPoints(Objects.isNull(firstPoint) ? old.getFirstPlayerPoints() : firstPoint);
         score.setSecondPlayerPoints(Objects.isNull(secondPoint) ? old.getSecondPlayerPoints() : secondPoint);
         score.setNeedGame(Objects.isNull(needGame) ? old.isNeedGame() : needGame);

@@ -28,7 +28,7 @@ public class ScoreProcess {
             score = checkGameProcess.checkGame(score);
             return score;
         }
-        if (onlyPoint ) {
+        if (onlyPoint) {
             score = regularProcess.process(old, pointFirstPlayer, pointSecondPlayer);
             score = checkGameProcess.checkGame(score);
             return score;
