@@ -22,7 +22,7 @@ public class MatchScoreServlet extends HttpServlet {
     private MatchService matchService;
 
     @Override
-    public void init() throws ServletException{
+    public void init() throws ServletException {
         super.init();
         ServletContext context = getServletContext();
         this.scoreService = (ScoreService) context.getAttribute("scoreService");

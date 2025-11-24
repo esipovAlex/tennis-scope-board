@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class ScoreResponse{
+public class ScoreResponse {
         private int firstPlayerSets;
         private int firstPlayerGames;
         private int firstPlayerPoints;

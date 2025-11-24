@@ -19,7 +19,7 @@ public class PlayerRepository {
 
     public Player add(Player player) {
         crudRepository.run(session -> {
-            try{
+            try {
                 session.persist(player);
                 session.flush();
             } catch (ConstraintViolationException e) {

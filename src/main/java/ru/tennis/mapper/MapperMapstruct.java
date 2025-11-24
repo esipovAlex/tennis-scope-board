@@ -9,6 +9,8 @@ import ru.tennis.model.response.ScoreResponse;
 
 @Mapper
 public interface MapperMapstruct {
+
     Player playerFromRequest(PlayerDtoRequest reguest);
+
     ScoreResponse responseFromScore(Score score);
 }
