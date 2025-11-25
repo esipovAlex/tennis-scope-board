@@ -15,8 +15,6 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.UUID;
 
-import static java.lang.System.out;
-
 @WebServlet("/match-score")
 public class MatchScoreServlet extends HttpServlet {
 
@@ -37,7 +35,6 @@ public class MatchScoreServlet extends HttpServlet {
         MatchResponse match = scoreService.addPoint(uuid, 0, 0);
         request.setAttribute("uuid", uuid.toString());
         request.setAttribute("match", match);
-        out.println("match = " + match);
         request.getRequestDispatcher("match-score.jsp").forward(request, response);
     }
 
