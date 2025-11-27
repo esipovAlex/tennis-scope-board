@@ -13,6 +13,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class ScoreService {
+
     private final Map<UUID, Score> store = new ConcurrentHashMap<>();
     private final ScoreProcess scoreProcess;
     private final MatchService matchService;
